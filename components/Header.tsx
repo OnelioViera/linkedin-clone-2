@@ -9,6 +9,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { IoNotificationsSharp } from "react-icons/io5";
+import { LuBell } from "react-icons/lu";
 
 async function Header() {
   return (
@@ -35,7 +37,7 @@ async function Header() {
         </form>
       </div>
 
-      <div className="flex items-center space-x-4 px-6">
+      <div className="flex items-center space-x-10 px-6">
         <Link href="" className="icon">
           <HomeIcon className="h-5 " />
           <p>Home</p>
@@ -43,7 +45,7 @@ async function Header() {
 
         <Link href="" className="icon hidden md:inline">
           <UsersIcon className="h-5" />
-          <p>Network</p>
+          <p>My Network</p>
         </Link>
 
         <Link href="" className="icon hidden md:inline">
@@ -54,6 +56,11 @@ async function Header() {
         <Link href="" className="icon">
           <MessagesSquare className="h-5" />
           <p>Messaging</p>
+        </Link>
+
+        <Link href="" className="icon hidden md:inline">
+        <LuBell className="h-5 w-10"/>
+          <p>Notifications</p>
         </Link>
 
         <SignedIn>
