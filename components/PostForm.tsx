@@ -49,7 +49,7 @@ function PostForm() {
           const promise = handlePostAction(formData);
           toast.promise(promise, {
             success: "Post created!",
-            error: "Error creating post: " + e.message,
+            error: "Error creating post: " + onmessage,
           });
         }}
         className="p-3 bg-white rounded-lg border"
